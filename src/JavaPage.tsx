@@ -13,19 +13,4 @@ const JavaPage :React.SFC<Props> = ({
     )
 
 }
-// class JavaPage extends React.Component{
-//     constructor(props:any){
-//         super(props)
-//     }
-
-//     render(){
-//         // const { clickHere } = this.props;
-//         return(
-//             <React.Fragment>
-//                 This is Java Page
-//                 {/* <button onClick={()=>this.props.clickHere()}>button</button> */}
-//             </React.Fragment>
-//         );
-//     }
-// }
 export default JavaPage;
