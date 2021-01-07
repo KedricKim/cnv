@@ -1,26 +1,40 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import JavaPage from './JavaPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface Props{
+  // clickHere : (page:string)=>void;
+}
+class App extends React.Component<Props>{
+  constructor(props:Props){
+    super(props)
+    this.state={
+
+    }
+  }
+
+  clickHere = (page:String) =>{
+    console.log('asd');
+    console.log(page);
+  }
+
+  render(){ 
+    return (
+      <React.Fragment>
+        <div className="App">
+          hello world
+          <br/>
+          {/* <button onClick={()=>this.clickHere()}>button</button> */}
+        </div>
+        <div>
+          <JavaPage 
+            clickHere={this.clickHere}
+          />
+        </div>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;
