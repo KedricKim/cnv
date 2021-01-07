@@ -1,16 +1,18 @@
 import React from 'react';
+
 interface Props{
     clickHere : (page:String)=>void;
 }
-const JavaPage :React.SFC<Props> = ({
+
+const MainComponent :React.SFC<Props> = ({
     clickHere
 }) => {
     return(
         <React.Fragment>
-                This is Java Page
-                <button onClick={()=>clickHere('잉')}>button</button>
+            This is MainComponent
+            <button onClick={()=>clickHere('잉')}>button</button>
         </React.Fragment>
     )
 
 }
-export default JavaPage;
+export default MainComponent;

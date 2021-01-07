@@ -1,38 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import JavaPage from './JavaPage';
+import { Route,Switch } from 'react-router-dom';
+import { Main } from './pages/PageIndex';
 
-interface Props{
-  // clickHere : (page:string)=>void;
-}
-class App extends React.Component<Props>{
-  constructor(props:Props){
-    super(props)
-    this.state={
-
-    }
-  }
-
-  clickHere = (page:String) =>{
-    console.log('asd');
-    console.log(page);
-  }
-
+class App extends React.Component{
   render(){ 
     return (
-      <React.Fragment>
-        <div className="App">
-          hello world
-          <br/>
-          {/* <button onClick={()=>this.clickHere()}>button</button> */}
-        </div>
-        <div>
-          <JavaPage 
-            clickHere={this.clickHere}
-          />
-        </div>
-      </React.Fragment>
+      <Switch>
+          <Route path="/" exact component={Main} />
+      </Switch>
     );
   }
 }
