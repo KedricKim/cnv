@@ -1,6 +1,6 @@
 import React from 'react';
 import MainComponent from '../components/MainComponent';
-
+import $ from "jquery"; 
 interface Props{
   // clickHere : (page:string)=>void;
 }
@@ -10,6 +10,18 @@ class MainContainer extends React.Component<Props>{
     this.state={
 
     }
+  }
+  componentDidMount(){
+    var jbOffset : any = $( '.wrap_top' ).offset();
+    $( window ).scroll( function() {
+      let document : any = $(this).scrollTop();
+        if ( document > jbOffset.top ) {
+            $( '.wrap_top' ).addClass( 'topFixed' );
+        }
+        else {
+            $( '.wrap_top' ).removeClass( 'topFixed' );
+        }
+    });
   }
 
   clickHere = (page:String) =>{

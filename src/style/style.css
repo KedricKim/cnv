@@ -9,10 +9,13 @@ body{background-color:ivory;}
     top:0;
     left: 0;
     right: 0;
-    background-color: ivory;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: white;
+    border-bottom: solid 1px #78acff;
 }
 .wrap_middle{
-    padding-top:140px;
+    padding-top:160px;
     top:0;
     left: 0;
     right: 0;

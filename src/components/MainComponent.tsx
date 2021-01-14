@@ -1,13 +1,12 @@
 import React from 'react';
 import '../style/style.css';
-
 interface Props{
-    clickHere : (page:String)=>void;
+    clickHere : (page:string)=>void;
 }
 
-const MainComponent :React.SFC<Props> = ({
+const MainComponent = ({
     clickHere
-}) => {
+}:Props) => {
     return(
         <React.Fragment>
             {/* <head>
@@ -32,7 +31,7 @@ const MainComponent :React.SFC<Props> = ({
                             <tr>
                                 {/* 로고 */}
                                 <td>
-                                    <img src='img/cnv_main_logo.jpg'
+                                    <img src='img/cnv_logo.png'
                                 // onclick="location.href='index.php'" 
                                 style={{width:'200px'}}/></td>
                                 {/* 메뉴버튼 */}
