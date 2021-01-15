@@ -1,27 +1,26 @@
 import React from 'react';
-import MainComponent from '../components/MainComponent';
+import IntroComponent from '../../components/main/IntroComponent';
 import $ from "jquery"; 
-interface Props {
+
+interface Props{
   // clickHere : (page:string)=>void;
 }
-class MainContainer extends React.Component<Props>{
+class IntroContainer extends React.Component<Props>{
   constructor(props:Props){
     super(props)
     this.state={
 
     }
   }
-  componentDidMount(){
-  }
 
-  // clickHere = (page:string) =>{
-  //   document.location.href = page;
-  // }
+//   clickHere = (page:String) =>{
+//     console.log(page);
+//   }
 
   render(){ 
     return (
       <React.Fragment>
-          <MainComponent 
+          <IntroComponent 
             // clickHere={this.clickHere}
           />
       </React.Fragment>
@@ -29,4 +28,4 @@ class MainContainer extends React.Component<Props>{
   }
 }
 
-export default MainContainer;
+export default IntroContainer;

@@ -3,6 +3,8 @@ body{background-color:ivory;}
 .wrap{
     min-height: 100%;
     position: relative;
+    justify-content: center;
+    display:flex;
 }
 .wrap_top{
     position: absolute;
@@ -53,4 +55,10 @@ A:hover
     COLOR: #666666;
     FONT-FAMILY: 굴림;
     TEXT-DECORATION: underline
+}
+
+.introTable tr td{
+    border-bottom: 1px solid #ddd;
+    padding : 10px;
+    text-align:center;
 }
