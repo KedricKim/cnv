@@ -9,29 +9,44 @@ const IntroComponent = ({
     return(
         <React.Fragment>
             <div className="wrap_middle" id="wrap_middle">
-                <table 
-                // border={0} 
-                width="50%" className="introTable">
+                <table className="introTable">
+                    <tbody>
                     <tr>
-                        {/* <th colSpan={2} height="30px" style={{background-color:'#0000ff'}}> */}
-                            {/* <font color="#ffffff"> */}
-                                회사소개
-                            {/* </font> */}
-                        {/* </th> */}
+                        <th colSpan={2} >회사소개</th>
                     </tr>
-                    <tr><td>회사명</td><td>씨앤브이 (Cureent and Velocity)</td></tr>
-                    <tr><td>대표명</td><td>김태환</td></tr>
-                    <tr><td>설립일</td><td>2006년 4월 25일</td></tr>
-                    <tr><td>회사 주소</td><td>경기도 성남시 분당구 구미동 165 분당 포스빌 523호</td></tr>
-                    <tr><td>주력 사업</td><td>각종 해양/환경 관련 분석 및 측정기기 판매</td></tr>
-                    <tr><td>연락처</td><td>전화 : 031 - 782 - 9165/6<br/>
+                    <tr>
+                        <td>회사명</td>
+                        <td>씨앤브이 (Cureent and Velocity)</td>
+                    </tr>
+                    <tr>
+                        <td>대표명</td>
+                        <td>김태환</td>
+                    </tr>
+                    <tr>
+                        <td>설립일</td>
+                        <td>2006년 4월 25일</td>
+                    </tr>
+                    <tr>
+                        <td>회사 주소</td>
+                        <td>경기도 성남시 분당구 구미동 165 분당 포스빌 523호</td>
+                    </tr>
+                    <tr>
+                        <td>주력 사업</td>
+                        <td>각종 해양/환경 관련 분석 및 측정기기 판매</td>
+                    </tr>
+                    <tr>
+                        <td>연락처</td>
+                        <td>전화 : 031 - 782 - 9165/6<br/>
                             팩스 : 031 - 782 - 9167<br/>
-                            Homepage : www.candv.co.kr    <br/>  E-Mail : thkim@candv.co.kr</td></tr>
-                    <tr><td>찾아 오시는 길</td><td rowSpan={10} align="center">
-                        <img src="../img/map.png" 
-                        // border="0"
-                        /></td>
-                        </tr>
+                            Homepage : www.candv.co.kr    <br/>  E-Mail : thkim@candv.co.kr</td>
+                    </tr>
+                    <tr>
+                        <td>찾아 오시는 길</td>
+                        <td rowSpan={10} align="center">
+                            <img src="../img/map.png" />
+                        </td>
+                    </tr>
+                    </tbody>
                 </table>
 
             </div>

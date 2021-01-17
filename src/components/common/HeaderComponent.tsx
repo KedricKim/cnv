@@ -35,7 +35,7 @@ const HeaderComponent = ({
                                                 <td><input type="button" className="wtButton" value="회사소개" onClick={()=>clickHere('/menu/intro')}/></td>
                                                 <td><input type="button" className="wtButton" value="제품소개" onClick={()=>clickHere('/menu/product')}/></td>
                                                 <td><input type="button" className="wtButton" value="카탈로그" onClick={()=>clickHere('/menu/catalog')}/></td>
-                                                <td><input type="button" className="wtButton" value="온라인견적" onClick={()=>clickHere('/menu/help')}/></td>
+                                                <td><input type="button" className="wtButton" value="온라인견적" onClick={()=>clickHere('/menu/onlineHelp')}/></td>
                                             </tr>
                                         </tbody>
                                     </table>

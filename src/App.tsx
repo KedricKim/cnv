@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route,Switch } from 'react-router-dom';
-import { Header,Footer, Main,Intro, } from './pages/PageIndex';
+import { Header,Footer, Main,Intro,Catalog,OnlineHelp } from './pages/PageIndex';
 import './style/style.css';
 import $ from "jquery"; 
 
@@ -38,6 +38,12 @@ class App extends React.Component{
 
               {/* 회사소개 */}
               <Route path="/menu/intro" component={Intro} />
+              {/* 카탈로그 */}
+              <Route path="/menu/catalog" component={Catalog} />
+              {/* 온라인 견적 */}
+              <Route path="/menu/onlineHelp" component={OnlineHelp} />
+
+              
           </Switch>
 
           {/* 푸터 */}
