@@ -1,6 +1,6 @@
 import React from 'react';
 interface Props{
-    submitCheck : (page:string)=>void;
+    submitCheck : (e:any)=>void;
 }
 
 const OnlineHelpComponent = ({
@@ -8,6 +8,7 @@ const OnlineHelpComponent = ({
 }:Props) => {
     return(
         <React.Fragment>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
             <div className="wrap_middle" id="wrap_middle">
                 <table>
                     <tbody>
@@ -19,14 +20,12 @@ const OnlineHelpComponent = ({
                                             최대한 빨리 처리하도록 하겠습니다.<br/>
                                             상담을 원하시는 분은 담당자, 상호, 연락처를 필히 남겨 주시기 바랍니다.</h2>
                                     </div>
-                                    <form id="form" method="post" action="../email/submitEmail.php">
-                                        <table 
-                                        // border="0"
-                                        cellSpacing="0" cellPadding="0" className="mailform">
+                                    <form id="form" className="contact-form" onSubmit={submitCheck}>
+                                        <table cellSpacing="0" cellPadding="0" className="mailform">
                                             <tbody>
                                             <tr>
                                                 <th>담당자<span>*</span><p>your name</p></th>
-                                                <td><input type="text" name="name" size={30} autoComplete="off" /></td>
+                                                <td><input type="text" name="from_name" size={30} autoComplete="off" /></td>
                                             </tr>
                                             <tr>
                                                 <th>이메일 주소<span>*</span><p>e-mail address</p></th>
@@ -52,27 +51,27 @@ const OnlineHelpComponent = ({
                                             <tr>
                                                 <th>회신 방법<span>*</span><p>response</p></th>
                                                 <td>
-                                                    <input type="checkbox" name="responseTel" /> 전화
-                                                    <input type="checkbox" name="responseFax" /> 팩스
-                                                    <input type="checkbox" name="responseEmail" defaultChecked/> 이메일 - 원하시는 회신방법을 선택해주세요.
+                                                    <input type="checkbox" name="response_tel" /> 전화
+                                                    <input type="checkbox" name="response_fax" /> 팩스
+                                                    <input type="checkbox" name="response_mail" defaultChecked/> 이메일 - 원하시는 회신방법을 선택해주세요.
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <th>내용<span>*</span><p>inquiry body</p></th>
-                                                <td><textarea name="inquiry" rows={10} cols={70} autoComplete="off" ></textarea></td>
+                                                <td><textarea name="message" rows={10} cols={70} autoComplete="off" ></textarea></td>
                                             </tr>
                                             <tr>
                                                 <th>문의하기</th>
                                                 <td>
-                                                    <input type="button" value="견적문의" onClick={()=>submitCheck.bind(this)}/>
+                                                    <input type="submit" value="견적문의"/>
                                                     <input type="reset" name="reset" value="다시쓰기" />
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
                                     </form>
-                                    <link rel="stylesheet" href="mailform/mailform.css" type="text/css"/>
-                                    <script type="text/javascript" src="mailform/mailform.js" charSet="utf-8"></script>
+                                    {/* <link rel="stylesheet" href="mailform/mailform.css" type="text/css"/>
+                                    <script type="text/javascript" src="mailform/mailform.js" charSet="utf-8"></script> */}
                                 </div>
                             </td>
                         </tr>
