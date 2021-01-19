@@ -12,7 +12,7 @@ class HeaderContainer extends React.Component<Props>{
     }
   }
 
-  clickHere = (page:string) =>{
+  pageMove = (page:string) =>{
     document.location.href = page;
   }
 
@@ -20,7 +20,7 @@ class HeaderContainer extends React.Component<Props>{
     return (
       <React.Fragment>
           <HeaderComponent 
-            clickHere={this.clickHere}
+            pageMove={this.pageMove}
           />
       </React.Fragment>
     );

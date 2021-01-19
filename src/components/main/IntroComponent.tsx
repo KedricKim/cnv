@@ -16,7 +16,7 @@ const IntroComponent = ({
                     </tr>
                     <tr>
                         <td>회사명</td>
-                        <td>씨앤브이 (Cureent and Velocity)</td>
+                        <td>씨앤브이 (Cureent & Velocity)</td>
                     </tr>
                     <tr>
                         <td>대표명</td>
@@ -38,12 +38,12 @@ const IntroComponent = ({
                         <td>연락처</td>
                         <td>전화 : 031 - 782 - 9165/6<br/>
                             팩스 : 031 - 782 - 9167<br/>
-                            Homepage : www.candv.co.kr    <br/>  E-Mail : thkim@candv.co.kr</td>
+                            Homepage : www.candv.co.kr    <br/>  E-Mail : <a href="mailto:thkim@candv.co.kr">thkim@candv.co.kr</a></td>
                     </tr>
                     <tr>
                         <td>찾아 오시는 길</td>
                         <td rowSpan={10} align="center">
-                            <img src="../img/map.png" />
+                            <img alt="" src={"../img/map.png" }/>
                         </td>
                     </tr>
                     </tbody>
