@@ -122,3 +122,8 @@ table.mailform tr td textarea {
     width: 100%;
     height: 120px;
 }
+.product_intro .border{
+    border:2px; 
+    border-color:#78acff;
+    border-style:solid;
+}

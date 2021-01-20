@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route,Switch } from 'react-router-dom';
-import { Header,Footer, Main,Intro,Catalog,OnlineHelp } from './pages/PageIndex';
+import { Header,Footer, Main,Intro,Catalog,OnlineHelp,Product,Current,Velocity } from './pages/PageIndex';
 import './style/style.css';
 import $ from "jquery"; 
 
@@ -36,12 +36,19 @@ class App extends React.Component{
               {/* 메인 */}
               <Route path="/" exact component={Main} />
 
-              {/* 회사소개 */}
+              {/* 회사 소개 */}
               <Route path="/menu/intro" component={Intro} />
               {/* 카탈로그 */}
               <Route path="/menu/catalog" component={Catalog} />
               {/* 온라인 견적 */}
               <Route path="/menu/onlineHelp" component={OnlineHelp} />
+              {/* 제품 소개 */}
+              <Route path="/menu/product" component={Product} />
+
+              {/* 유속계 */}
+              <Route path="/menu/current" component={Current} />
+              {/* 파고계 */}
+              <Route path="/menu/velocity" component={Velocity} />
 
               
           </Switch>
