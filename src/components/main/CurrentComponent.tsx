@@ -10,10 +10,12 @@ const CurrentComponent = ({
         <React.Fragment>
             <div className="wrap_middle" id="wrap_middle">
                 <table cellSpacing={0} cellPadding={0} width="100%" className="product_intro">
+                    <tbody>
                     {/* 시작  */}
                     <tr>
                         <td>
                             <table width="620" >
+                                <tbody>
                                 <tr>
                                     <td className="border">
                                         <p>
@@ -22,11 +24,14 @@ const CurrentComponent = ({
                                         </p>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                             <table width="620">
+                                <tbody>
                                 <tr>
                                     <td height="25" className="border">
                                         <table>
+                                            <tbody>
                                             <tr>
                                                 <td>
                                                     <p>
@@ -35,14 +40,16 @@ const CurrentComponent = ({
                                                     </p>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                 </tr>
+                                </tbody>
                             </table>
                             {/* 상품 내용 시작 */}
 
                             <table width="620">
-
+                            <tbody>
                                 <tr>
                                     <td height="5" colSpan={8}>
                                         <p></p>
@@ -53,9 +60,11 @@ const CurrentComponent = ({
                                 <tr>
                                     <td>
                                         <table>
+                                            <tbody>
                                             <tr>
                                                 <td>
                                                     <table >
+                                                        <tbody>
                                                         <tr>
                                                             <td className="border">
                                                                 <p>
@@ -65,6 +74,7 @@ const CurrentComponent = ({
                                                                 </p>
                                                             </td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </td>
                                             </tr>
@@ -79,13 +89,16 @@ const CurrentComponent = ({
                                                     </p>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                     <td>
                                         <table>
+                                            <tbody>
                                             <tr>
                                                 <td>
                                                     <table >
+                                                        <tbody>
                                                         <tr>
                                                             <td className="border">
                                                                 <p>
@@ -95,6 +108,7 @@ const CurrentComponent = ({
                                                                 </p>
                                                             </td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </td>
                                             </tr>
@@ -109,13 +123,16 @@ const CurrentComponent = ({
                                                     </p>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                     <td>
                                         <table>
+                                            <tbody>
                                             <tr>
                                                 <td>
                                                     <table >
+                                                        <tbody>
                                                         <tr>
                                                             <td className="border">
                                                                 <p>
@@ -125,6 +142,7 @@ const CurrentComponent = ({
                                                                 </p>
                                                             </td>
                                                         </tr>
+                                                        </tbody>
                                                     </table>
                                                 </td>
                                             </tr>
@@ -139,16 +157,18 @@ const CurrentComponent = ({
                                                     </p>
                                                 </td>
                                             </tr>
+                                            </tbody>
                                         </table>
                                     </td>
                                 </tr>
-
+                                </tbody>
                             </table>
 
                             {/* 상품 내용 끝 */}
                         </td>
                     </tr>
                     {/* 끝 */}
+                    </tbody>
                 </table>
                 <p>
                     <input type="button" id="goProduct" className="btnBottom" value="제품소개 메인" onClick={()=>pageMove('/menu/product')}/>

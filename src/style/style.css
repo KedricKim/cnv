@@ -1,5 +1,5 @@
 html,body { height: 100%; margin: 0; }
-body{background-color:ivory;}
+/* body{background-color:ivory;} */
 .wrap{
     min-height: 100%;
     position: relative;
@@ -13,8 +13,8 @@ body{background-color:ivory;}
     right: 0;
     padding-bottom: 10px;
     padding-top: 10px;
-    background-color: white;
-    border-bottom: solid 1px #78acff;
+    background-color: ivory;
+    /* border-bottom: solid 1px #78acff; */
 }
 .wrap_middle{
     padding-top:160px;
@@ -123,7 +123,7 @@ table.mailform tr td textarea {
     height: 120px;
 }
 .product_intro .border{
-    border:2px; 
+    border:1px; 
     border-color:#78acff;
     border-style:solid;
 }

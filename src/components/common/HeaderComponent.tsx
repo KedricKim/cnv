@@ -24,7 +24,7 @@ const HeaderComponent = ({
                             {/* 메뉴버튼 */}
                             <td valign="bottom" align="right">
                                 <div className="wt_right">
-                                    <small style={{padding:'20px'}}>
+                                    <small>
                                         경기도 성남시 분당구 구미동 165번지 포스빌 523호<br/>
                                         Tel : (031) 782 - 9165/6     Fax : (031) 782 - 9167<br/>
 
