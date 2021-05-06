@@ -17,16 +17,11 @@ class CurrentContainer extends React.Component<Props>{
     document.location.href = page;
   }
   componentDidMount() {
-    this._getHello();
+    this._getProduct();
   }
 
-  _getHello = async() => {
-    console.log(Config.default.DB_BASE_URL)
-    console.log(process.env.REACT_APP_API_BASE_URL)
-    console.log(`REACT_APP_API_BASE_URL = ${process.env.REACT_APP_API_BASE_URL}`);
-    Axios.get('http://localhost:8000/list/product', {
-      // title: movieContent.title,
-      // content: movieContent.title
+  _getProduct = async() => {
+    Axios.get('/api/product', {
     }).then((res)=>{
       console.log(res)
     })

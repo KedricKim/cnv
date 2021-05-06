@@ -2,6 +2,7 @@ import React from 'react';
 import { Route,Switch } from 'react-router-dom';
 import { Header,Footer, Main,Intro,Catalog,OnlineHelp,Product,Current,Velocity } from './pages/PageIndex';
 import './style/style.css';
+import 'bootstrap/dist/css/bootstrap.css'
 import $ from "jquery"; 
 
 class App extends React.Component{

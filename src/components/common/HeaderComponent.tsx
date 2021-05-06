@@ -32,11 +32,21 @@ const HeaderComponent = ({
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td><input type="button" className="wtButton" value="메인" onClick={()=>pageMove('/')}/></td>
-                                                <td><input type="button" className="wtButton" value="회사소개" onClick={()=>pageMove('/menu/intro')}/></td>
-                                                <td><input type="button" className="wtButton" value="제품소개" onClick={()=>pageMove('/menu/product')}/></td>
-                                                <td><input type="button" className="wtButton" value="카탈로그" onClick={()=>pageMove('/menu/catalog')}/></td>
-                                                <td><input type="button" className="wtButton" value="온라인견적" onClick={()=>pageMove('/menu/onlineHelp')}/></td>
+                                                <td>
+                                                    <button type="button" className="btn btn-primary btn-sm" onClick={()=>pageMove('/')}>메인</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" className="btn btn-success btn-sm" onClick={()=>pageMove('/menu/intro')}>회사소개</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" className="btn btn-info btn-sm" onClick={()=>pageMove('/menu/product')}>제품소개</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" className="btn btn-warning btn-sm" onClick={()=>pageMove('/menu/catalog')}>카탈로그</button>
+                                                </td>
+                                                <td>
+                                                    <button type="button" className="btn btn-danger btn-sm" onClick={()=>pageMove('/menu/onlineHelp')}>온라인견적</button>
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
